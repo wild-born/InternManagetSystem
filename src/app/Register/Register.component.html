@@ -1,0 +1,83 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <form [formGroup]="user">
+      <div class="well form-horizontal">
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">InternId</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input formControlName="internId" name="first_name" placeholder="Id" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">InternName</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input formControlName="internName" name="last_name" placeholder="Name" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">PhoneNo</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+              <input formControlName="phoneNo" name="contact_no" placeholder="(+91)" minlength="10" maxlength="10"
+                class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Adress</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+              <input formControlName="address1" name="" placeholder="Home-Adress" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">E-Mail</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input formControlName="mailId" name="email" placeholder="MailId" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-md-4 control-label">Password</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input formControlName="password" name="user_password" placeholder="Password" class="form-control"
+                type="password">
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-success" role="alert" id="success_message">Success <i
+            class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+        </div>
+      </div>
+
+      <div>
+        <input type="submit" (click)="SignUp()" class="btn btn-lg btn-primary btn-block btn-signin"
+          style="margin-left: 75px; width: 50%;" value="Register" type="submit">
+      </div>
+
+      <!-- <div>
+        <input type="submit" (click)="register()" class="btn btn-lg btn-primary btn-block btn-signin"
+          style="margin-left: 75px; width: 50%;" value="Modify" type="submit">
+      </div> -->
+      <router-outlet></router-outlet>

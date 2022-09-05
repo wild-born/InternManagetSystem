@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card card-container">
+    <img id="profile-img" class="profile-img-card" style="width: 50%;"
+      src="data:image/png;base64,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" />
+    <p id="profile-name" class="profile-name-card"></p>
+    <form [formGroup]="user">
+      <input formControlName="mail" required type="text" style="padding-top:20px;width:100%;" class="fadeIn second"
+        placeholder="Email">
+      <input formControlName="password" required type="text" style="padding-top:20px ; width: 100%; margin-top:20px"
+        class="fadeIn second" placeholder="Password">
+      <input type="submit" (click)="login()" class="btn btn-lg btn-primary btn-block btn-signin"
+        style="cursor: pointer;margin-top: 20px;margin-left: 75px;width: 50%;" value="Login">
+    </form>
+  </div>
+</div>

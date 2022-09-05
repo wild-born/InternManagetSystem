@@ -1,0 +1,19 @@
+table,
+th,
+td {
+  border: 2px solid;
+  margin-top: 4%;
+  margin-left: 2%;
+  margin-right: 90%;
+  text-align: center;
+}
+h2 {
+  padding-left: 45%;
+}
+
+table.table td a.delete {
+  color: #e34724;
+}
+nav {
+  margin-left: 50%;
+}

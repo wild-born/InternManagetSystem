@@ -1,0 +1,54 @@
+<h2> <b><b><i><u>Designation Details</u></i></b></b></h2>
+<nav>
+  <div class="col-md-12">
+    <a routerLink="../AddDesignatinDetails" type="button" class="btn btn-labeled btn-success"><b><b>+Add
+          Designation</b></b></a>
+  </div>
+</nav>
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>InternId</th>
+      <th>DesignationName</th>
+      <th>DepartmentName</th>
+      <th>CompanyMonthly_Hr</th>
+      <th>InternMonthly-Hr</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{item.id}}</td>
+      <td>{{item.designationId}}</td>
+      <td>{{item.designationName}}</td>
+      <td>{{item.departmentName}}</td>
+      <td>{{item.companyMonthlyHour}}</td>
+      <td>{{item.internMonthlyHour}}</td>
+      <td>{{item.status}}</td>
+
+      <td>
+        <li class="list-inline-item">
+          <button routerLink="../EditDesignation/{{item.id}}" (click)="edit(item)" routerLinkActive="router-link-active" type="button"
+            class="btn btn-labeled btn-warning">
+
+            <span class="btn-label"><i class="glyphicon glyphicon-bookmark"></i></span>Edit<a
+              href="https://t4.ftcdn.net/jpg/03/46/38/39/360_F_346383913_JQecl2DhpHy2YakDz1t3h0Tk3Ov8hikq.jpg"></a></button>
+
+
+          /
+
+
+          <button type="button" class="btn btn-labeled btn-danger" (click)="delete(item)">
+
+            <span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Delete<a
+              href="https://t4.ftcdn.net/jpg/03/46/38/39/360_F_346383913_JQecl2DhpHy2YakDz1t3h0Tk3Ov8hikq.jpg"></a></button>
+        </li>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>

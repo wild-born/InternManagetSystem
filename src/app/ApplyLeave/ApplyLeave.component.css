@@ -1,0 +1,16 @@
+body{
+  color: rgb(3, 3, 77);
+}
+table, th, td {
+  border: 1px solid;
+text-align: center;
+margin-left: 40%;
+}
+h2{
+  margin-left: 37%;
+  margin-bottom: 1%;
+}
+nav{
+  margin-left: 80%;
+  margin-bottom: 4%;
+}

@@ -1,0 +1,17 @@
+body{
+  color: rgb(3, 3, 77);
+
+}
+table, th, td {
+  border: 2px solid;
+  margin-top:4%;
+  margin-left:2%;
+  margin-right:50%;
+  text-align: center;
+  width: 5px 5px ;
+
+}
+h2{
+  padding-left: 45%;
+}
+
